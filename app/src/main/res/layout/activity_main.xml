@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <EditText
+        android:id="@+id/harga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Masukan Harga" />
+
+    <EditText
+        android:id="@+id/diskon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Masukan Diskon %"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/hitungdiskon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung Diskon"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/judul1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Harga Diskon:"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/hargadiskon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rp0"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/judul2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Harga Setelah Diskon:"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/hargasetelahdiskon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rp0"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>
