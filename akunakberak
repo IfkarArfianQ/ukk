@@ -114,12 +114,9 @@ public class MainActivity extends AppCompatActivity {
             int potonganHarga = (int) (hargaAwal * (diskonPersen / 100));
             int totalHarga = hargaAwal - potonganHarga;
 
-            // Format ke dalam mata uang Rupiah
-            NumberFormat formatRupiah = NumberFormat.getCurrencyInstance(new Locale("id", "ID"));
-
             // Tampilkan hasil
-            hargadiskon.setText(formatRupiah.format(potonganHarga));
-            hargasetelahdiskon.setText(formatRupiah.format(totalHarga));
+            hargadiskon.setText(String.valueOf(potonganHarga));
+            hargasetelahdiskon.setText(String.valueOf(totalHarga));
 
         } catch (NumberFormatException e) {
             // Validasi input angka
